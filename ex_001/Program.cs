@@ -1,24 +1,25 @@
 ﻿
-    void Ex_001()
-    {
-    //Напишите программу, которая принимает на вход координаты двух точек 
-    //и находит расстояние между ними в 3D пространстве.
+void Ex_001()
+{
+    Console.WriteLine ("Введите число x1:");
+    int x1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine ("Введите число y1:");
+    int y1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine ("Введите число z1:");
+    int z1 = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine ("Введите число x2:");
+    int x2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine ("Введите число y2:");
+    int y2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine ("Введите число z2:");
+    int z2 = Convert.ToInt32(Console.ReadLine());
 
-    Random random=new Random();
-    int x1 = random.Next (-10,11);
-    int y1 = random.Next (-10,11);
-    int x2 = random.Next (-10,11);
-    int y2 = random.Next (-10,11);
-    int z1 = random.Next (-10,11);
-    int z2 = random.Next (-10,11);
-
-    Console.WriteLine($"Точка с кооординатами({x1},{y1},{z1})");
-    Console.WriteLine($"Точка с кооординатами({x2},{y2},{z2})");
-
-    double result = Math.Sqrt(Math.Pow(z2-x2-x1,2) + Math.Pow(z1-y2-y1,2));
+    double result = Math.Sqrt(Math.Pow(x2-x1,2) + Math.Pow(y2-y1,2) + Math.Pow(z2-z1,2));
 
     Console.WriteLine(result);
-    }
+}
+
+//Ex_001();
 
 
 
