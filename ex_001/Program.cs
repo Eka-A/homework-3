@@ -41,4 +41,35 @@ void Ex_002()
 
 //Ex_002();
 
+void Ex_003()
+{
+    //Напишите программу, которая принимает на вход пятизначное число 
+    //и проверяет, является ли оно палиндромом.
+    
+    Console.WriteLine ("Введите пятизначное число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
 
+    if (number > 99999)
+    {
+        Console.WriteLine ("Значение введено неверно");
+    }
+    else if (number < 9999)
+    {
+        Console.WriteLine ("Значение введено неверно");
+    }
+
+    string numb = Convert.ToString(number);
+
+    if (numb[0]==numb[4] && numb[1]==numb[3])
+    {
+        Console.WriteLine ("Дa");
+    }
+
+    else if (numb[0]!=numb[4] && numb[1]!=numb[3])
+    {
+        Console.WriteLine ("Нет");
+    }
+
+}
+
+Ex_003();
